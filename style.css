@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap");
+:root {
+  --redbg: #f7f7f7;
+  --ylwbg: #212529;
+  --grad: linear-gradient(90deg, #2c2c2c 0%, white 100%);
+}
+
+body {
+  background-color: var(--ylwbg);
+  width: 200vw;
+  height: 200vh;
+  overflow: HIDDEN;
+}
+
+#sectionOne {
+  opacity: 0;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 1;
+}
+
+#sectionTwo {
+  background: var(--redbg);
+  position: absolute;
+  left: 100%;
+  width: 100%;
+  top: 0%;
+  height: 100%;
+  color: var(--ylwbg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#loader {
+  background-color: var(--redbg);
+}
+
+#load {
+  height: 100%;
+}
+
+.about {
+  position: absolute;
+  top: 40%;
+  left: 9%;
+  font-family: "Helvetica";
+  font-size: 15px;
+  color: var(--ylwbg);
+  z-index: 3;
+  animation: fadeIn 0.5s 1 linear;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+  opacity: 0;
+}
+
+.signature {
+  font-family: "Mrs Saint Delafield";
+  font-size: 30px;
+}
+
+.wel {
+  position: absolute;
+  top: 13%;
+  left: 5%;
+  z-index: 3;
+  font-family: "LEMON MILK";
+  font-weight: bolder;
+  padding: 1%;
+  font-size: 45px;
+  animation: fadeIn 0.5s 1 linear;
+  animation-delay: 7.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  color: var(--ylwbg);
+}
+
+.come {
+  position: absolute;
+  top: 27%;
+  left: 5.4%;
+  z-index: 3;
+  font-family: "LEMON MILK";
+  font-weight: bolder;
+  color: var(--ylwbg);
+  font-size: 15px;
+  padding: 1%;
+  animation: fadeIn 0.5s 1 linear;
+  animation-delay: 7.2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.pagenr {
+  position: absolute;
+  top: 2.5%;
+  left: 90%;
+  font-size: 10px;
+  font-family: "Arial";
+  color: var(--redbg);
+  animation: fadeIn 0.5s 1 linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 7.2s;
+  z-index: 2;
+}
+
+.plsscroll {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  font-size: 20px;
+  font-family: "Arial";
+  color: rgba(255, 255, 255, 1);
+  animation: fadeIn 0.5s 1 linear, bounce 3s infinite ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 8.5s;
+  opacity: 0;
+  z-index: 3;
+}
+
+.s2scroll {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 20px;
+  font-family: "Arial";
+  color: rgba(33, 37, 41, 1);
+  animation: bounce 3s infinite ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: 3;
+}
+
+.arrow {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 110%;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: white;
+  border-left-color: white;
+  border: solid;
+  width: 40%;
+  height: 80%;
+  border-style: solid solid hidden hidden;
+  transform: rotate(45deg);
+}
+
+.s2arrow {
+  position: absolute;
+  top: 12%;
+  left: -50%;
+  background-color: rgba(1, 1, 255, 0);
+  border-color: rgba(33, 37, 41, 1);
+  border-left-color: rgba(33, 37, 41, 1);
+  border: solid;
+  width: 40%;
+  height: 80%;
+  border-style: hidden hidden solid solid;
+  transform: rotate(45deg);
+  z-index: 5;
+}
+
+.s2pagenr {
+  position: absolute;
+  top: 2.5%;
+  left: 90%;
+  font-size: 10px;
+  font-family: "Arial";
+  color: var(--ylwbg);
+}
+
+.pnnumber {
+  position: absolute;
+  font-family: "Arial";
+  color: var(--redbg);
+  font-size: 80px;
+  top: 2.5%;
+  left: 90%;
+  animation: fadeIn 0.5s 1 linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 7.2s;
+  z-index: 3;
+}
+
+.s2pnnumber {
+  position: absolute;
+  font-family: "Arial";
+  color: var(--ylwbg);
+  font-size: 80px;
+  top: 2.5%;
+  left: 90%;
+  z-index: 3;
+}
+
+.loadbox {
+  background-color: var(--redbg);
+  content: "";
+  position: relative;
+  top: 23%;
+  left: 23%;
+  height: 6%;
+  width: 3%;
+  animation: expandUp 2s ease-in-out 1;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+  border: solid white;
+  border-style: hidden solid hidden hidden;
+}
+
+#loaad {
+  position: absolute;
+  left: 48%;
+  margin-bottom: 50%;
+  top: 59%;
+  font-family: "LEMON MILK";
+  color: var(--redbg);
+  z-index: 1;
+  animation: fade 1ms linear 1;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+}
+
+.photo {
+  position: absolute;
+  width: 300%;
+  height: 150%;
+  top: -150%;
+  left: 47.9%;
+  z-index: 1;
+  animation: picSlide 0.5s ease-in-out 1, fadeIn 1ms linear 1;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+  opacity: 0;
+}
+
+.waves::after {
+  content: "";
+  position: absolute;
+  top: 59.5%;
+  left: 44%;
+  height: 20%;
+  width: 10%;
+  background-color: var(--ylwbg);
+  border-radius: 40%;
+  z-index: 1;
+  animation: spin 8s ease-in-out 1;
+}
+
+.me {
+  position: absolute;
+  top: 0.5%;
+  left: 33%;
+  z-index: 3;
+  animation: fadeIn 50ms ease-in-out 1;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+  opacity: 0;
+}
+
+#worktest {
+  position: relative;
+  left: 20%;
+}
+
+#CV {
+  padding-left: 0px;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--ylwbg);
+  font-size: 35px;
+  font-family: "LEMON MILK";
+  z-index: 6;
+  cursor: pointer;
+}
+
+.active,
+.workbutton:hover {
+  background: var(--ylwbg);
+  color: var(--redbg);
+  z-index: 6;
+}
+
+.education:hover {
+  background: var(--ylwbg);
+  color: var(--redbg);
+}
+
+.skillset:hover {
+  background: var(--ylwbg);
+  color: var(--redbg);
+}
+
+/*ANIMATIONS*/
+
+@keyframes spin {
+  0% {
+    transform: translateY(-95%) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(-200%) rotate(800deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    color: var(--redbg);
+  }
+  to {
+    color: var(--ylwbg);
+  }
+}
+
+@keyframes expandUp {
+  0% {
+    z-index: 2;
+  }
+
+  50% {
+    top: 0%;
+    height: 100%;
+    z-index: 2;
+    width: 3%;
+    left: 23%;
+  }
+
+  75% {
+    height: 50%;
+    top: 0%;
+    z-index: 2;
+    width: 15%;
+    left: 0%;
+  }
+
+  100% {
+    height: 300%;
+    top: 0%;
+    z-index: 2;
+    width: 24%;
+    left: 0%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(25px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes picSlide {
+  0% {
+    top: -150%;
+  }
+  100% {
+    top: -25%;
+  }
+}
