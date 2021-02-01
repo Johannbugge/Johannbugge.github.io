@@ -132,7 +132,7 @@ html {
 
 .s2scroll {
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 5%;
   font-size: 20px;
   font-family: "Arial";
@@ -233,20 +233,20 @@ html {
   animation-delay: 6s;
 }
 /*
-#photo {
-  position: absolute;
-  width: 50%;
-  border: solid;
-  height: 100vw;
-  top: 0%;
-  left: 47.9%;
-  z-index: 2;
-  animation: picSlide 0.5s ease-in-out 1, fadeIn 1ms linear 1;
-  animation-fill-mode: forwards;
-  animation-delay: 8s;
-  opacity: 0;
-}
-*/
+  #photo {
+    position: absolute;
+    width: 50%;
+    border: solid;
+    height: 100vw;
+    top: 0%;
+    left: 47.9%;
+    z-index: 2;
+    animation: picSlide 0.5s ease-in-out 1, fadeIn 1ms linear 1;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+    opacity: 0;
+  }
+  */
 .gif {
   position: absolute;
   top: -159%;
@@ -293,11 +293,61 @@ html {
   left: 20%;
 }
 
+.header {
+  opacity: 0.5;
+  width: 50%;
+  font-size: 14px;
+}
+
+.cvinfo {
+  font-size: 15px;
+  color: var(--ylwbg);
+}
+
 #CV {
   padding-left: 0px;
   position: absolute;
   left: 45%;
-  top: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  color: var(--ylwbg);
+  font-size: 15px;
+  font-family: "Arial";
+  z-index: 6;
+  width: 50%;
+}
+
+#educate {
+  padding-left: 0px;
+  position: absolute;
+  left: 45%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  color: var(--ylwbg);
+  font-size: 15px;
+  font-family: "Arial";
+  z-index: 6;
+  width: 50%;
+}
+
+#development {
+  padding-left: 0px;
+  position: absolute;
+  left: 75%;
+  top: 66.5%;
+  transform: translate(-50%, -50%);
+  color: var(--ylwbg);
+  font-size: 15px;
+  font-family: "Arial";
+  z-index: 6;
+  width: 50%;
+}
+
+#design {
+  padding-left: 0px;
+  position: absolute;
+  left: 75%;
+  top: 85%;
   transform: translate(-50%, -50%);
   color: var(--ylwbg);
   font-size: 10px;
@@ -305,45 +355,118 @@ html {
   z-index: 6;
   width: 50%;
 }
-
-.workone {
-  padding-left: 10%;
-  font-size: 20px;
+.viewresume {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  color: var(--ylwbg);
   font-family: "Arial";
+  font-size: 18px;
   cursor: pointer;
+  box-sizing: border-box;
+  width: 70vw;
+  padding-left: 10%;
+}
+.viewresume:hover {
+  animation: smooth 0.4s ease-in-out 1 forwards;
+  color: rgb(255, 117, 117);
+}
+.contactme {
+  color: var(--ylwbg);
+  width: 20%;
+  position: absolute;
+  top: 60%;
+  left: 75%;
+  font-size: 25px;
+  font-family: "Arial";
+  opacity: 0.8;
 }
 
-.worktwo {
-  padding-left: 10%;
-  font-size: 20px;
-  font-family: "Arial";
-  cursor: pointer;
+.highlightcontact {
+  color: rgb(255, 117, 117);
 }
 
-.eduone {
-  padding-left: 10%;
-  font-size: 20px;
-  font-family: "Arial";
-  cursor: pointer;
+.redbox {
+  position: absolute;
+  top: 10.5%;
+  left: 17%;
+  height: 24.5vh;
+  width: 0.3%;
+  background-color: rgb(255, 117, 117);
+  color: rgb(255, 117, 117);
+  z-index: 10;
 }
 
-.edutwo {
-  padding-left: 10%;
-  font-size: 20px;
-  font-family: "Arial";
-  cursor: pointer;
+.whitebox {
+  position: absolute;
+  top: 0%;
+  left: 17%;
+  height: 10vh;
+  width: 0.4%;
+  background-color: var(--redbg);
+  z-index: 10;
+  animation: updown 5s ease-in-out forwards infinite;
 }
+
+.whiteboxtwo {
+  position: absolute;
+  top: 0%;
+  left: 17%;
+  height: 10vh;
+  width: 0.4%;
+  background-color: var(--redbg);
+  z-index: 10;
+  animation: updownwb 5s ease-in-out forwards infinite;
+}
+
+@keyframes updown {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes updownwb {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+.aboutjohann {
+  color: grey;
+  width: 50%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  font-size: 40px;
+  font-family: "Arial";
+}
+
+.highlight {
+  color: var(--ylwbg);
+  font-weight: bolder;
+}
+
+.highlight:hover {
+  color: rgb(255, 117, 117);
+}
+
 /*
-.active,
-.workbutton {
-  background: var(--ylwbg);
-  color: var(--redbg);
-  z-index: 6;
-}
+  .active,
+  .workbutton {
+    background: var(--ylwbg);
+    color: var(--redbg);
+    z-index: 6;
+  }
 
-div > img > i > span #worktest {
-  transition: height 1s;
-} */
+  div > img > i > span #worktest {
+    transition: height 1s;
+  } */
 
 /*ANIMATIONS*/
 
@@ -435,6 +558,15 @@ div > img > i > span #worktest {
   }
   100% {
     top: -25%;
+  }
+}
+
+@keyframes smooth {
+  from {
+    left: 10%;
+  }
+  to {
+    left: 12%;
   }
 }
 
