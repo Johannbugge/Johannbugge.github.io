@@ -165,7 +165,7 @@ html {
   border-color: rgba(33, 37, 41, 1);
   border-left-color: rgba(33, 37, 41, 1);
   border: solid;
-  width: 40%;
+  width: 36%;
   height: 80%;
   border-style: hidden hidden solid solid;
   transform: rotate(45deg);
@@ -222,7 +222,7 @@ html {
 
 #loaad {
   position: absolute;
-  left: 48%;
+  left: 47%;
   margin-bottom: 50%;
   top: 59%;
   font-family: "LEMON MILK";
@@ -232,23 +232,36 @@ html {
   animation-fill-mode: forwards;
   animation-delay: 6s;
 }
-
-.photo {
+/*
+#photo {
   position: absolute;
-  width: 1000px;
-  height: auto;
-  top: -150%;
+  width: 50%;
+  border: solid;
+  height: 100vw;
+  top: 0%;
   left: 47.9%;
-  z-index: 1;
+  z-index: 2;
   animation: picSlide 0.5s ease-in-out 1, fadeIn 1ms linear 1;
   animation-fill-mode: forwards;
   animation-delay: 8s;
   opacity: 0;
 }
-
+*/
 .gif {
-  width: 1000px;
-  height: auto;
+  position: absolute;
+  top: -159%;
+  left: 47.9%;
+  size: 100%;
+  opacity: 0;
+  animation: picSlide 0.5s ease-in-out 1, fadeIn 1ms linear 1;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+  z-index: 2;
+}
+
+#worktest {
+  height: 0rem;
+  overflow: hidden;
 }
 
 .waves::after {
@@ -287,28 +300,50 @@ html {
   top: 50%;
   transform: translate(-50%, -50%);
   color: var(--ylwbg);
-  font-size: 35px;
-  font-family: "LEMON MILK";
+  font-size: 10px;
+  font-family: "Arial";
   z-index: 6;
+  width: 50%;
+}
+
+.workone {
+  padding-left: 10%;
+  font-size: 20px;
+  font-family: "Arial";
   cursor: pointer;
 }
 
+.worktwo {
+  padding-left: 10%;
+  font-size: 20px;
+  font-family: "Arial";
+  cursor: pointer;
+}
+
+.eduone {
+  padding-left: 10%;
+  font-size: 20px;
+  font-family: "Arial";
+  cursor: pointer;
+}
+
+.edutwo {
+  padding-left: 10%;
+  font-size: 20px;
+  font-family: "Arial";
+  cursor: pointer;
+}
+/*
 .active,
-.workbutton:hover {
+.workbutton {
   background: var(--ylwbg);
   color: var(--redbg);
   z-index: 6;
 }
 
-.education:hover {
-  background: var(--ylwbg);
-  color: var(--redbg);
-}
-
-.skillset:hover {
-  background: var(--ylwbg);
-  color: var(--redbg);
-}
+div > img > i > span #worktest {
+  transition: height 1s;
+} */
 
 /*ANIMATIONS*/
 
